@@ -481,9 +481,42 @@ cc.Class({
 
     /**
      * 设置灵敏度
+     * 默认 10
      */
     setSensitiveThr:function(sensitive){
         this._sensitiveThr = sensitive;
+    },
+
+    /**
+     * 设置右滑的最大距离
+     * 默认 当前牌宽度的0.73倍
+     */
+    setThresholdRight:function(thresholdRight){
+        this._thresholdRight = thresholdRight;
+    },
+
+    /**
+     * 设置左滑的最大距离
+     * 默认 当前牌宽度的0.73倍
+     */
+    setThresholdLift:function(thresholdLift){
+        this._thresholdLift = thresholdLift;
+    },
+    
+    /**
+     * 设置下滑的最大距离
+     * 默认 当前牌高度的0.7倍
+     */
+    setThresholdDown:function(thresholdDown){
+        this._thresholdDown = thresholdDown;
+    },
+
+    /**
+     * 设置上滑的最大距离
+     * 默认 当前牌高度的0.7倍
+     */
+    setThresholdUp:function(thresholdUp){
+        this._thresholdUp = thresholdUp;
     },
 
     /**
